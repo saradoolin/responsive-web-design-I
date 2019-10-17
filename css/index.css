@@ -132,6 +132,10 @@ h1, h2, h3, h4, h5 {
 	margin: 30px 0
 }
 
+.bottom-text-content h4 {
+	margin-bottom: 30px;
+}
+
 /* Contact */
 .contact {
 	margin-left: 2%;
@@ -172,6 +176,12 @@ footer p {
 	.index-nav-child-text a {
 		margin: 0 auto;
 	}
+	.top-content {
+		margin: 3%;
+	}
+	.bottom-content {
+		margin: 3%;
+	}
 }
 
 @media(max-width: 500px) {
@@ -183,10 +193,48 @@ footer p {
 		width: 100vw;
 		text-align: center;
 		font-size: 20px;
-		padding: 15px;
-		margin: 0;
+		padding: 15px 0;
+		margin: 0 auto;
 	}
 	.index-nav-child-text a:last-child {
 		border-bottom: 1px solid gray;
+	}
+	.top-content {
+		display: flex; 
+		flex-direction: column;
+		margin: 0 auto;
+	}		
+	.top-text-content {
+		width: 100vw;
+		margin: 3% 0;
+	}
+
+	.top-text-content h4 {
+		margin: 2%;
+	}
+	.top-text-content p {
+		margin: 2%;
+	}
+	.index-main-content {
+		width: 100vw;
+	}
+	.index-main-content .middle-img {
+		width: 100vw;
+		margin-bottom: 4%;
+	}
+	.bottom-content {
+		display: flex; 
+		flex-direction: column;
+		margin: 0 auto;
+	}
+	.bottom-text-content {
+		width: 100vw;
+		margin: 3% 0;
+	}
+	.bottom-text-content p {
+		margin: 2%;
+	}
+	.bottom-text-content h4 {
+		margin: 2%;
 	}
 }
