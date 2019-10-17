@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5 {
 .index-nav-child-text a {
 	text-decoration: none;
 	color: gray;
-	margin: 0 3.8%;
+	margin: 0 3.7%;
 }
 
 /* Header */
@@ -145,6 +145,33 @@ h1, h2, h3, h4, h5 {
 footer p {
 	text-align: center;
 	margin-top: 30px;
+}
+
+@media(max-width: 800px) {
+	.index-header-image {
+		display: none;	
+	}
+	.index-header {
+		justify-content: center;
+	}
+
+	.index-nav-parent .logo {
+		margin-top: 30px;
+	}
+	.index-nav-parent {
+		flex-direction: column-reverse;
+		justify-content: center;
+		margin: 0;
+	}
+	.index-nav-child-text {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 30px;
+	}
+	.index-nav-child-text a {
+		margin: 0 auto;
+	}
 }
 
 
